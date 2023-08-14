@@ -1,0 +1,131 @@
+* {
+    background-color: #302f3e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { font-size: 5vh }
+
+.calc-contain {
+    margin: auto;
+    padding-left: 4vw;
+    padding-right: 1vw;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'text text text text'
+        'ac rev per div'
+        'n7 n8 n9 multi'
+        'n4 n5 n6 sub'
+        'n1 n2 n3 add'
+        'n0 n0 dot submit';
+}
+
+.grid-item { 
+    border: none;
+    font-size: 6vw;
+    margin: 1.5vw;
+}
+
+.grid-button {
+    width: 17.5vw;
+    height: 17.5vw;
+    border-radius: 50%;
+}
+
+.grid-zero { border-radius: 20vw }
+
+.grid-text{ 
+    grid-area: text;
+    text-align: right;
+    font-size: 15vw;
+    border: none;
+    padding: 4vw 8vw 4vw 0;
+    color: white;
+}
+
+.grid-mod{
+    background-color: rgb(88, 87, 88);
+    color: white;
+}
+
+.grid-op {
+    background-color: rgb(236, 81, 46);
+    color: white;
+}
+
+.grid-num {
+    background-color: rgb(247, 220, 202);
+    color: #252424
+}
+
+.grid-mod:active{ background-color: rgb(68, 67, 68)}
+.grid-op:active { background-color: rgb(218, 76, 45)}
+.grid-num:active { background-color: rgb(224, 197, 178)}
+
+.grid-ac{ grid-area: ac;}
+.grid-rev{ grid-area: rev;}
+.grid-per{ grid-area: per;}
+.grid-div{ grid-area: div;}
+.grid-multi{ grid-area: multi;}
+.grid-sub{ grid-area: sub;}
+.grid-add{ grid-area: add;}
+.grid-n1{ grid-area: n1;}
+.grid-n2{ grid-area: n2;}
+.grid-n3{ grid-area: n3;}
+.grid-n4{ grid-area: n4;}
+.grid-n5{ grid-area: n5;}
+.grid-n6{ grid-area: n6;}
+.grid-n7{ grid-area: n7;}
+.grid-n8{ grid-area: n8;}
+.grid-n9{ grid-area: n9;}
+.grid-n0{ grid-area: n0;}
+.grid-dot{ grid-area: dot;}
+.grid-submit{ grid-area: submit;}
+
+.grid-extend { display: none }
+
+
+@media (orientation: landscape) {
+    .calc-contain {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grid-extend {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .history-container { flex: 70% }
+    .grid-container { flex: 30% }
+
+    .history-title {
+        color: #fff;
+        margin: 1vh 0;
+    }
+
+    .grid-item { 
+        border: none;
+        font-size: 5vh;
+        margin: 2vh;
+    }
+    
+    .grid-button {
+        width: 12.5vh;
+        height: 12.5vh;
+        border-radius: 50%;
+    }
+    
+    .grid-zero { border-radius: 25vh }
+    
+    .grid-text{ 
+        grid-area: text;
+        text-align: right;
+        font-size: 10vh;
+        border: none;
+        padding: 2.5vh 4vh 2.5vh 0;
+        color: white;
+    }
+  }
