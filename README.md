@@ -10,7 +10,7 @@ This started because I want a calculator app for my iPad. I didn't need anything
 
 * Phase 1 (Current):
     - [x] Get basic calculator functionality working.
-    - [ ]Get history display working.
+    - [ ] Get history display working.
     - [ ] Get continuous calculation working. This is where you could just keep hitting n+n+n+n+n and it'll keep updating without hitting equal. Equal would be the final result.
     - [ ] History will only appear in landscape mode.
     - [ ] Should work in offline
