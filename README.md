@@ -9,16 +9,18 @@ This started because I want a calculator app for my iPad. I didn't need anything
 ## Goals
 
 * Phase 1 (Current):
-** Get basic calculator and history functionality working.
-** History will only appear in landscape mode.
-** Should work in offline
+    - [x] Get basic calculator functionality working.
+    - [ ]Get history display working.
+    - [ ] Get continuous calculation working. This is where you could just keep hitting n+n+n+n+n and it'll keep updating without hitting equal. Equal would be the final result.
+    - [ ] History will only appear in landscape mode.
+    - [ ] Should work in offline
 * Phase 2:
-** Add a History slide out in portrait mode.
-** Fix remaining responsive issues.
+    - [ ] Add a History slide out in portrait mode.
+    - [ ] Fix remaining responsive issues.
 * Phase 3: 
-** Add additional function buttons in landscape mode. See iOS calculator (landscape mode) for a reference.
+    - [ ] Add additional function buttons in landscape mode. See iOS calculator (landscape mode) for a reference.
 * Phase 4:
-** Add additional themes
+    - [ ] Add additional themes
 
 ## Note
 While I am using the iOS Calculator app as a reference, this project won't be an exact copy. I just needed a starting point.
